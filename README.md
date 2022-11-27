@@ -1,4 +1,7 @@
 # Dessins géométriques et artistiques avec votre micro-ordinateur
+This repository presents programs written by french mathematician and computer scientist [Jean-Paul Delahaye](https://fr.wikipedia.org/wiki/Jean-Paul_Delahaye) in the book "Dessins géométriques et artistiques avec votre micro-ordinateur" published in 1985 for the [Eyrolles](https://www.eyrolles.com/) french publishing house.<br /><br />
+The programs were recoded with [p5.js](https://p5js.org/), the online collection can be found here at https://editor.p5js.org/v3ga/collections/ALPCSgG3E
+
 ## 1. Polygones, étoiles, etc.
 ### Le programme POLYGONES RÉGULIERS
 <a href="https://editor.p5js.org/v3ga/sketches/zqz6330sg" target="_blank"/><img src="DESSIN_GEOMETRIQUE_1.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/zqz6330sg" target="_blank"/><img src="DESSIN_GEOMETRIQUE_2.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/zqz6330sg" target="_blank"/><img src="DESSIN_GEOMETRIQUE_3.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/zqz6330sg" target="_blank"/><img src="DESSIN_GEOMETRIQUE_4.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/zqz6330sg" target="_blank"/><img src="DESSIN_GEOMETRIQUE_5.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/zqz6330sg" target="_blank"/><img src="DESSIN_GEOMETRIQUE_6.png" width="200" /></a>
