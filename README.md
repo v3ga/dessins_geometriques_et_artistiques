@@ -2,7 +2,7 @@
 This repository presents programs written by french mathematician and computer scientist [Jean-Paul Delahaye](https://fr.wikipedia.org/wiki/Jean-Paul_Delahaye) in the book "Dessins géométriques et artistiques avec votre micro-ordinateur" published in 1985 for the [Eyrolles](https://www.eyrolles.com/) french publishing house.<br /><br />
 The programs were recoded with [p5.js](https://p5js.org/), the online collection can be found here at https://editor.p5js.org/v3ga/collections/ALPCSgG3E
 
-<img src="img/Dessins_géométriques_artistiques_couverture.jpg" height="400" />
+<img src="Dessins_géométriques_artistiques_couverture.jpg" height="400" />
 
 ## 1. Polygones, étoiles, etc.
 ### Le programme POLYGONES RÉGULIERS
