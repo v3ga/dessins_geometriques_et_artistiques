@@ -33,6 +33,12 @@ The programs were originally programmed with Microsoft Basic for [Canon X-07](ht
 <a href="https://editor.p5js.org/v3ga/sketches/NdF63mFKW" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_101.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/NdF63mFKW" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_104.png" width="200" /></a><br /><a href="https://editor.p5js.org/v3ga/sketches/NdF63mFKW" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_102.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/NdF63mFKW" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_103.png" width="200" /></a>
 ### Programme LINÉAIRES MODULO
 <a href="https://editor.p5js.org/v3ga/sketches/JDNWEdt6l" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_105.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/JDNWEdt6l" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_106.png" width="200" /></a><br /><a href="https://editor.p5js.org/v3ga/sketches/JDNWEdt6l" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_107.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/JDNWEdt6l" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_108.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/X-JjW1JbC" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_109.png" width="200" /></a>
+### Programme LINÉAIRES BÂTONS
+<a href="https://editor.p5js.org/v3ga/sketches/NoB387GC1" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_110.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/VApS8yQQu" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_111.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/OSq04_5xw" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_112.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/xPTloKtns" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_113.png" width="200" /></a><br /><a href="https://editor.p5js.org/v3ga/sketches/A9JGbu3uJ" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_114.png" width="200" /></a>
+
+
+
+
 
 
 
