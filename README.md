@@ -33,7 +33,7 @@ The programs were originally programmed with Microsoft Basic for [Canon X-07](ht
   - [Le programme QUADRILLAGES ÉLASTIQUES](#le-programme-quadrillages-élastiques)    
 - [9. Surfaces](#9-surfaces)
   - [Le programme SURFACES](#le-programme-surfaces) 
-- [10. La troisième dimension](#9-la-troisième-dimension)
+- [10. La troisième dimension](#10-la-troisième-dimension)
   - [Le programme D3DATA](#le-programme-d3data) 
   - [Le programme D3CUBE](#le-programme-d3cube) 
   - [Le programme D3STRUCTURES](#le-programme-d3structures) 
