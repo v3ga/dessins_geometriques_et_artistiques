@@ -33,6 +33,10 @@ The programs were originally programmed with Microsoft Basic for [Canon X-07](ht
   - [Le programme QUADRILLAGES ÉLASTIQUES](#le-programme-quadrillages-élastiques)    
 - [9. Surfaces](#9-surfaces)
   - [Le programme SURFACES](#le-programme-surfaces) 
+- [10. La troisième dimension](#9-la-troisième-dimension)
+  - [Le programme D3DATA](#le-programme-d3data) 
+  - [Le programme D3CUBE](#le-programme-d3cube) 
+  - [Le programme D3STRUCTURES](#le-programme-d3structures) 
 
 ## 1. Polygones, étoiles, etc.
 ### Le programme POLYGONES RÉGULIERS
@@ -85,9 +89,10 @@ The programs were originally programmed with Microsoft Basic for [Canon X-07](ht
 ### Le programme SURFACES 
 <a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_177.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_178.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_179.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_180.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_181.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_183.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_184.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_186.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_187.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_189.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_190.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_191.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_194.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_198.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_199.png" width="200" /></a>
 
-
-
 <a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_182.png" height="250" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_185.png" height="250" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_192.png" height="250" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_193.png" height="250" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_195.png" height="250" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_196.png" height="250" /></a><a href="https://editor.p5js.org/v3ga/sketches/Fjzd6CaHV" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_200.png" height="250" /></a>
 
-
+## 10. La troisième dimension
+### Le programme D3DATA
+### Le programme D3CUBE 
+### Le programme D3STRUCTURES 
 
