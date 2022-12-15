@@ -94,5 +94,7 @@ The programs were originally programmed with Microsoft Basic for [Canon X-07](ht
 ## 10. La troisième dimension
 ### Le programme D3DATA
 ### Le programme D3CUBE 
+<a href="https://editor.p5js.org/v3ga/sketches/t0r8WsPyI" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_207.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/f11Z6Ho4s" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_208.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/60V5Elo2R" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_209.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/7HeIF9JR_" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_210.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/NCSPXY3B5" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_211.png" width="200" /></a>
+
 ### Le programme D3STRUCTURES 
 
