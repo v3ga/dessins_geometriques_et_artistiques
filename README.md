@@ -51,6 +51,7 @@ The programs were originally programmed with Microsoft Basic for [Canon X-07](ht
 <a href="https://editor.p5js.org/v3ga/sketches/BbxFzu_47" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_26.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/BbxFzu_47" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_27.png" width="200" /></a>
 ## 2. Dessins à partir de données
 ### Le programme CHEVAL  
+<a href="https://editor.p5js.org/v3ga/sketches/JYswBNeP5" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_34.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/7r18cT1zF" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_35.png" width="200" /></a><a href="https://editor.p5js.org/v3ga/sketches/Q74tuf3yh" target="_blank"/><img src="img/DESSIN_GEOMETRIQUE_36.png" width="200" /></a>
 ### Les programmes LION, OISEAUX-POISSONS, SMURF    
 
 ## 3. Dragons de papiers pliés
