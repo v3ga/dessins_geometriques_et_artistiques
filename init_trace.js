@@ -30,7 +30,7 @@ function PALETTE(which)
   {
     BG_COLOR=p[0];
     STROKE_COLOR=p[1];
-    PALETTE_SELECTED=which;
+    PALETTE_SELECT=which;
   }
   else
   {
