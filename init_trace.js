@@ -1,6 +1,14 @@
 // ----------------------------------------------------
 var OUTPUT = "";
 var DG_GREY = 245;
+var PALETTES = {
+"RED" :     ["#E4BAA8","#8F080E"], // background, stroke
+"GREEN" :   ["#99C7BB","#005B51"],
+"YELLOW" :  ["#E6DB76","#040A53"]
+};
+
+var BG_COLOR=DG_GREY,STROKE_COLOR=0;
+var PALETTE_SELECT;
 
 // ----------------------------------------------------
 function SGN(X)
@@ -15,10 +23,28 @@ function LPRINT(s)
 }
 
 // ----------------------------------------------------
+function PALETTE(which)
+{
+  let p = PALETTES[which];
+  if (p)
+  {
+    BG_COLOR=p[0];
+    STROKE_COLOR=p[1];
+    PALETTE_SELECTED=which;
+  }
+  else
+  {
+    BG_COLOR=DG_GREY;
+    STROKE_COLOR=0;
+  }
+}
+
+// ----------------------------------------------------
 function INIT()
 {
   createCanvas(NP,NP);
-  background(DG_GREY);
+  background(BG_COLOR);
+  stroke(STROKE_COLOR);
   noFill();
 }
 
@@ -26,7 +52,8 @@ function INIT()
 function INIT2(H)
 {
   createCanvas(NP,H);
-  background(DG_GREY);
+  background(BG_COLOR);
+  stroke(STROKE_COLOR);
   noFill();
 }
 
@@ -34,7 +61,8 @@ function INIT2(H)
 function INIT_WH(W,H)
 {
   createCanvas(W,H);
-  background(DG_GREY);
+  background(BG_COLOR);
+  stroke(STROKE_COLOR);
   noFill();
 }
 
@@ -161,6 +189,7 @@ function keyPressed()
   {
     let filename = "DESSIN_GEOMETRIQUE"
     if (DESSIN) filename += `_${DESSIN}`;
+    if (PALETTE_SELECT) filename += `_${PALETTE_SELECT}`;
     filename+=".png";
     save(filename);
   }
