@@ -2,7 +2,7 @@
 
 👉 https://editor.p5js.org/v3ga/collections/ALPCSgG3E
 
-This repository presents programs written by french mathematician and computer scientist [Jean-Paul Delahaye](https://fr.wikipedia.org/wiki/Jean-Paul_Delahaye) in the book "Dessins géométriques et artistiques avec votre micro-ordinateur" published in 1985 for the [Eyrolles](https://www.eyrolles.com/) french publishing house.<br /><br />
+This repository presents programs written by french mathematician and computer scientist [Jean-Paul Delahaye](https://fr.wikipedia.org/wiki/Jean-Paul_Delahaye) in the book *"Dessins géométriques et artistiques avec votre micro-ordinateur"* published in 1985 for the [Eyrolles](https://www.eyrolles.com/) french publishing house.<br /><br />
 <img src="/Dessins_géométriques_artistiques_couverture.jpg" height="350" /><img src="/Dessins_géométriques_artistiques_pages_fractales.jpg" height="350" />
 <img src="/dessin_geometriques_cover_composition_1280w.png" height="350" />
 
