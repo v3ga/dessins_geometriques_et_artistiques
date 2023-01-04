@@ -3,8 +3,8 @@
 👉 https://editor.p5js.org/v3ga/collections/ALPCSgG3E
 
 This repository presents programs written by french mathematician and computer scientist [Jean-Paul Delahaye](https://fr.wikipedia.org/wiki/Jean-Paul_Delahaye) in the book *"Dessins géométriques et artistiques avec votre micro-ordinateur"* published in 1985 for the [Eyrolles](https://www.eyrolles.com/) french publishing house.<br /><br />
-<img src="/Dessins_géométriques_artistiques_couverture.jpg" height="350" /><img src="/Dessins_géométriques_artistiques_pages_fractales.jpg" height="350" />
-<img src="/dessin_geometriques_cover_composition_1280w.png" height="350" />
+<img src="/Dessins_géométriques_artistiques_couverture.jpg" height="350" width="auto" /><img src="/Dessins_géométriques_artistiques_pages_fractales.jpg" height="350" width="auto" />
+<img src="/dessin_geometriques_cover_composition_1280w.png" height="350" width="auto" />
 
 The programs were originally programmed with Microsoft Basic for [Canon X-07](https://en.wikipedia.org/wiki/Canon_X-07) computer, outputs were drawn on a [Canon X710 plotter](http://pocket.free.fr/html/canon/x-710_f.html). They were recoded with [p5.js](https://p5js.org/), the online collection can be found [here](https://editor.p5js.org/v3ga/collections/ALPCSgG3E). You can click on each thumb to jump to the corresponding sketch. Be sure to edit the *DESSIN* variable in the program header.
 
