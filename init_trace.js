@@ -1,15 +1,18 @@
 // ----------------------------------------------------
 var OUTPUT = "";
-var DG_GREY = 245;
+var DG_GREY = "#F5F5F5";
 var PALETTES = {
 "RED" :     ["#E4BAA8","#8F080E"], // background, stroke
 "GREEN" :   ["#99C7BB","#005B51"],
 "YELLOW" :  ["#E6DB76","#040A53"]
 };
 
-var BG_COLOR=DG_GREY,STROKE_COLOR=0;
+var BG_COLOR=DG_GREY,STROKE_COLOR="#000000";
 var PALETTE_SELECT;
-
+var _SVG_ = false;
+var svgStrokeColor = STROKE_COLOR;
+var svgElmt, svgVertices=[],svgTranslate;
+    
 // ----------------------------------------------------
 function SGN(X)
 {
@@ -38,32 +41,23 @@ function PALETTE(which)
     STROKE_COLOR=0;
   }
 }
-
+ 
 // ----------------------------------------------------
-function INIT()
+function INIT(opts={})
 {
-  createCanvas(NP,NP);
-  background(BG_COLOR);
-  stroke(STROKE_COLOR);
-  noFill();
+  init_(NP,NP,opts);
 }
 
 // ----------------------------------------------------
-function INIT2(H)
+function INIT2(H,opts={})
 {
-  createCanvas(NP,H);
-  background(BG_COLOR);
-  stroke(STROKE_COLOR);
-  noFill();
+  init_(NP,H,opts)
 }
 
 // ----------------------------------------------------
 function INIT_WH(W,H)
 {
-  createCanvas(W,H);
-  background(BG_COLOR);
-  stroke(STROKE_COLOR);
-  noFill();
+  init_(W,H,opts)
 }
 
 // ----------------------------------------------------
@@ -80,14 +74,14 @@ function TRACE(opts={})
   let isSep = c => { return c==','};
   let read = i => {return OUTPUT.charAt(i)};
   let end = i => {return i>=OUTPUT.length};
-  let logState = _=> {if(log) console.log(`state=${state}, i=${i}-${s.length} / c=${c}`); } 
+  let logState = _=> {/*if(log) console.log(`state=${state}, i=${i}-${OUTPUT.length} / c=${c}`);*/ } 
   // 0 : READ COMMAND
   // 1 : READ X
   // 2 : READ Y
   // 3 : EXECUTE
   
   if (log)
-    console.log(S)
+    console.log(OUTPUT)
   
   let i = 0;
   let error = false;
@@ -145,19 +139,19 @@ function TRACE(opts={})
       logState();
       if (command=="M")
       {
-        if (prev_command=="D") {if (log) console.log(`endShape()`) ; endShapeClose ? endShape(CLOSE) : endShape();} 
+        if (prev_command=="D") {if (log) console.log(`endShape()`) ; endShapeClose ? endShape_(CLOSE) : endShape_();} 
         
-        beginShape();
-        vertex(x,y);
+        beginShape_();
+        vertex_(x,y);
         if (log)
           console.log(`command=${command}, beginShape();vertex(${x},${y});`)
       }
       else if (command=="D")
       {
-        vertex(x,y);
+        vertex_(x,y);
         if (log)
           console.log(`command=${command} , vertex(${x},${y});`)
-        if (end(i+1)) { if (log) console.log(`endShape()`) ; endShapeClose ? endShape(CLOSE) : endShape(); };
+        if (end(i+1)) { if (log) console.log(`endShape()`) ; endShapeClose ? endShape_(CLOSE) : endShape_(); };
       }
       
       if (!end(i+1))
@@ -183,6 +177,13 @@ function TRACE2(opts={})
 }
 
 // ----------------------------------------------------
+function DESSIN_DANS(a)
+{
+  return a.includes(DESSIN);
+}
+
+
+// ----------------------------------------------------
 function keyPressed()
 {
   if (key == ' ') 
@@ -190,8 +191,141 @@ function keyPressed()
     let filename = "DESSIN_GEOMETRIQUE"
     if (DESSIN) filename += `_${DESSIN}`;
     if (PALETTE_SELECT) filename += `_${PALETTE_SELECT}`;
-    filename+=".png";
-    save(filename);
+    filename += _SVG_ ? ".svg":".png";
+    save_(filename);
+  }
+}
+    
+// ----------------------------------------------------
+function init_(w,h,opts)
+{
+  if (opts.svg===true)
+  {
+    _SVG_ = true;
+    noCanvas();
+    width=w;
+    height=h;
+    svgTranslate=createVector();
+    svgElmt = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svgElmt.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    svgElmt.setAttribute("version", `1.1`); 
+    svgElmt.setAttribute("viewBox", `0 0 ${w} ${h}`); 
+    document.body.appendChild(svgElmt);
+  }
+  else
+  {
+    _SVG_ = false;
+    createCanvas(w,h);
+  }
+
+    background_(BG_COLOR);
+    stroke_(STROKE_COLOR);
+    noFill_();
+}
+       
+    
+// ----------------------------------------------------
+function background_(color)
+{
+  if (_SVG_)
+    svgElmt.style.backgroundColor = color;
+  else 
+    background(color);
+}
+
+// ----------------------------------------------------
+function stroke_(color)
+{
+  if (_SVG_)
+    svgStrokeColor = color;
+  else
+    stroke(color);
+}
+    
+// ----------------------------------------------------
+function noFill_()
+{
+  if (!_SVG_)
+    noFill();
+}
+    
+// ----------------------------------------------------
+function beginShape_()
+{
+  if (_SVG_)
+    svgVertices=[];
+  else
+    beginShape();
+}
+
+// ----------------------------------------------------
+function vertex_(x,y)
+{
+  if (_SVG_)
+    svgVertices.push( {x:x,y:y} );
+  else
+    vertex(x,y);
+}
+
+// ----------------------------------------------------
+function endShape_(mode)
+{
+  if (_SVG_)
+  {
+    let polyline = document.createElementNS("http://www.w3.org/2000/svg", mode == CLOSE ? "polygon" : "polyline");   
+    polyline.setAttribute("stroke", svgStrokeColor);
+    polyline.setAttribute("fill", "none");
+    let strPoints = ""
+    let first = true;
+    svgVertices.forEach( v => {strPoints += `${first ? "" : " "}${v.x},${v.y}`; first=false});
+    polyline.setAttribute("points", strPoints);
+    if (svgTranslate.x != 0 || svgTranslate.y != 0)
+      polyline.setAttribute("transform",`translate(${svgTranslate.x} ${svgTranslate.y})`)
+    svgElmt.appendChild(polyline);
+  }
+  else
+  {
+    if (mode)
+      endShape(mode);
+    else 
+      endShape();
+  }
+  
+}
+    
+// ----------------------------------------------------
+function translate_(x,y)
+{
+  if (_SVG_)
+  {
+    svgTranslate.add(x,y);
+  }
+  else
+  {
+    translate(x,y);
   }
 }
 
+// ----------------------------------------------------
+function save_(filename)
+{
+  if (_SVG_)
+  {
+    let svgData = svgElmt.outerHTML;
+    let preface = '<?xml version="1.0" standalone="no"?>\r\n';
+    let svgBlob = new Blob([preface, svgData], {type:"image/svg+xml;charset=utf-8"});
+    let svgUrl = window.URL.createObjectURL(svgBlob);
+    let downloadLink = document.createElement("a");
+    downloadLink.href = svgUrl;
+    downloadLink.download = filename;
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  }
+  else
+  {
+    save(filename);
+  }
+  
+}
+  
