@@ -48,6 +48,9 @@ function setup()
 }
 ```
 
+## Python version
+[Alvaro Machuca Recalde](https://github.com/quanturtle) made an adaptation of this repository in Python, you can find it here : https://github.com/quanturtle/dessins_geometriques_et_artistiques 
+
 ## Summary
 - [1. Polygones, étoiles, etc.](#1-polygones-étoiles-etc)
   - [Le programme POLYGONES RÉGULIERS](#le-programme-polygones-réguliers)    
